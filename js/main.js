@@ -1,11 +1,17 @@
-$('.flip')
-  .click(function(){
-    location.href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#q=zerg%20rush&es_th=1"
-  })
-  .hover(function(){
-    // if(Math.round(Math.random())){
-      $(this).css("transform", 'translate('+Math.random()*200+'px,'+Math.random()*200+'px)')
-    // }else{
+$('.important')
+	.css('transition', 'all 2s')
+	.css('left', '0px')
+	.mouseover(function(){
+		$(this)
+			.css('left', '200px')
+			
+	})
+	.mouseout(function(){
+		$(this)
+			.css('left', '0px')
+	})
 
-    // }
-  })
+document.addEventListener('play', function(e){
+$('body')
+		.css('background', 'green');
+}, true)
